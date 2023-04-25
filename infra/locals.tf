@@ -1,6 +1,12 @@
 locals {
-  subnets = {
-    "servers"      = ["10.0.1.0/24"]
-    "workstations" = ["10.0.2.0/24"]
+  networks = {
+   "headoffice" = {
+    "vnet" = ["10.1.0.0/16"]
+    "subnet" = ["10.1.1.0/24"]
+   }
+   "remoteoffice" = {
+    "vnet" = ["10.2.0.0/16"]
+    "subnet" = ["10.2.1.0/24"]
+   }
   }
 }
